@@ -13,7 +13,7 @@ default allow := false
 allow if {
 
     # User ABAC rules
-    mpMatches(MP1)
+    mpMatches(MP1) # enum example
     blMatches("ABC")
 
     cityMatches(input.cityId)

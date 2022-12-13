@@ -6,13 +6,14 @@ import data.oparules.core.mpMatches
 import data.oparules.core.blMatches
 import data.oparules.core.cityMatches
 import data.oparules.core.personaMatches
+import data.oparules.core.MP1
 
 default allow := false
 
 allow if {
 
     # User ABAC rules
-    mpMatches("XYZ")
+    mpMatches(MP1)
     blMatches("ABC")
 
     cityMatches(input.cityId)
